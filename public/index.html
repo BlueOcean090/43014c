@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CS4241 Assignment 2</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+<h1> Welcome to my Terrible PGP system!</h1>
+<h2> Here is how to generate keys</h2>
+<h2> Keys will automatically download in a text file for each</h2>
+<form>
+  <ul class="flex-outer">
+    <li>
+      <input type="text" id="name" placeholder="name of user here" required />
+    </li>
+    <li>
+      <input type="email" id="email" placeholder="email address here" aria-placeholder="none@gmail.com"/>
+    </li>
+    <li>
+      <input type="text" id="passphrase" placeholder="make a memorable passphrase" aria-placeholder="something secret"/>
+    </li>
+    <li>
+      <button id = "submit">Submit</button>
+    </li>
+    <li>
+      <h3 id="keysConf"></h3>
+    </li>
+  </ul>
+</form>
+<h2>Here is how to encrypt and decrypt messages</h2>
+<h2>Make sure to keep the username passphrase and email the same</h2>
+<form>
+  <ul class="flex-outer">
+    <li>
+      <label>
+        message to encrypt
+        <input type="text" id="messagenc" >
+      </label>
+    </li>
+    <li>
+      <button id = "encrypt">Encrypt Message</button>
+    </li>
+    <li>
+      <h3 id="encryption"></h3>
+    </li>
+
+    <li>
+      <label>
+        message to decrypt
+        <input type="file" id="messagedc" >
+      </label>
+    </li>
+    <li>
+      <button id = "decrypt">Decrypt message</button>
+    </li>
+    <li>
+      <h3 id="decryption" hidden></h3>
+    </li>
+  </ul>
+</form>
+</body>
+</html>
